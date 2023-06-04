@@ -13,12 +13,17 @@
 
 <body>
   <div class="container-flex">
-    <div class="sidebar">
-      <a class="sidebar__item active" href="javascript:void(0)">Home</a>
-      <a class="sidebar__item" href="javascript:void(0)">Services</a>
-      <a class="sidebar__item" href="javascript:void(0)">News</a>
-      <a class="sidebar__item" href="javascript:void(0)">Blog</a>
-      <a class="sidebar__item" href="javascript:void(0)">Contact</a>
+    <div class="sidebar-wrapper">
+      <button class="burger-btn" onclick="sidebarToggle()">
+        <img src="/assets/images/burger-menu-svgrepo-com.svg" alt="">  
+      </button>
+      <div class="sidebar" id="sidebar">
+        <a class="sidebar__item active" href="javascript:void(0)">Home</a>
+        <a class="sidebar__item" href="javascript:void(0)">Services</a>
+        <a class="sidebar__item" href="javascript:void(0)">News</a>
+        <a class="sidebar__item" href="javascript:void(0)">Blog</a>
+        <a class="sidebar__item" href="javascript:void(0)">Contact</a>
+      </div>
     </div>
     <div class="content">
       <div class="content__main">

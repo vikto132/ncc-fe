@@ -52,3 +52,17 @@
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .content {
+    &__main {
+      padding: 20px;
+      .card-container {
+        flex-direction: column;
+      }
+    }
+    .footer {
+      position: initial;
+      padding: 20px;
+    }
+  }
+}

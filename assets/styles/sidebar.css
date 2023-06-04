@@ -1,18 +1,45 @@
-.sidebar {
+.sidebar-wrapper {
+  position: relative;
+}
+.sidebar-wrapper .burger-btn {
+  display: none;
+  position: absolute;
+  z-index: 10;
+}
+.sidebar-wrapper .burger-btn img {
+  width: 32px;
+  height: 32px;
+}
+.sidebar-wrapper .sidebar {
   background-color: #191718;
   width: 150px;
   min-height: 100vh;
 }
-.sidebar__item {
-  color: #AAAAAA;
+.sidebar-wrapper .sidebar__item {
+  color: #aaaaaa;
   padding: 14px 16px 11px;
   text-decoration: none;
   display: block;
 }
-.sidebar__item.active {
-  color: #FFFFFF;
+.sidebar-wrapper .sidebar__item.active {
+  color: #ffffff;
 }
-.sidebar__item:hover {
-  color: #FFFFFF;
-  background-color: #5C5C5C;
+.sidebar-wrapper .sidebar__item:hover {
+  color: #ffffff;
+  background-color: #5c5c5c;
+}
+
+@media (max-width: 768px) {
+  .sidebar-wrapper.active .sidebar {
+    display: block;
+  }
+  .sidebar-wrapper.active .burger-btn {
+    display: none;
+  }
+  .sidebar-wrapper .sidebar {
+    display: none;
+  }
+  .sidebar-wrapper .burger-btn {
+    display: block;
+  }
 }/*# sourceMappingURL=sidebar.css.map */

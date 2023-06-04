@@ -44,4 +44,17 @@
   left: 0;
   border-top: 1px solid #DEDEDE;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .content__main {
+    padding: 20px;
+  }
+  .content__main .card-container {
+    flex-direction: column;
+  }
+  .content .footer {
+    position: initial;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=content.css.map */
